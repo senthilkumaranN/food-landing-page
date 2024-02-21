@@ -1,0 +1,186 @@
+:root{
+    --orange:#D95204;
+    --pale:#667302;
+    --litewhite:#F2D8C9;
+    --black:#0D0D0D;
+    --dark:#8C2703;
+}
+
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fontpage{
+    background-image: url('../foods.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--black);
+    
+   
+}
+
+
+header a{
+    text-decoration: none;
+    color:var(--orange);
+    min-width: 120px;
+    
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    padding: 1em;
+}
+
+header i,nav i{
+    margin-right: .3em;
+    align-items: center;
+}
+
+#logo{
+    font-size: 2.5rem;
+    font-weight:700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    flex: 3;
+    min-width: 260px;
+}
+nav {
+     flex:2;
+     display: flex;
+}
+
+nav a{
+    flex: 0.5;
+    font-weight: 700;
+    margin: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    
+}
+
+nav a:hover{
+    color: var(--litewhite);
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+    
+}
+
+.tagline{
+    font-weight: bolder;
+    font-size:2.5em ;
+    color:beige;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.tagline2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color:bisque;
+    font-style: italic;
+    font-size: 1.5em;
+    
+}
+.callus{
+    color:var(--black);
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration:underline;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ button{
+    width: 10vw;
+    border-radius: 5px;
+    margin-top: 0.6em;
+    padding: .5em;
+    background-color:var(--dark);
+    color: var(--litewhite);
+    font-weight: bold;
+    border: 1px solid var(--black);
+
+}
+.maintext div{
+    margin-top: .75em;
+    
+}
+
+    
+
+.menu{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background: linear-gradient(to right, rgb(100,100,100),rgb(52,52,53));
+    color: var(--litewhite);
+}
+
+#menuheading,#locheading{
+    background: linear-gradient(to right, rgb(100,100,100),rgb(52,52,53));
+    font-size: 2.5em;
+    color: var(--dark);
+    display: flex;
+    justify-content: center;
+}
+
+.menu th{
+    color:var(--pale);
+    font-size: 1.8em;
+}
+
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+
+.menu td:nth-child(1){
+    flex:1;
+    justify-content: left;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+.maincourse{
+    grid-row:span 2;
+}
+
+.Location{
+    background: linear-gradient(to right, rgb(100,100,100),rgb(52,52,53));
+    color: var(--litewhite);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Location h2{
+    color:var(--pale);
+    margin-bottom: .8em;
+}
+
+.Location div{
+    flex:1;
+    padding:1em;
+    min-width:220px;
+}
+
+footer{
+    background-color: rgb(52,52,53);
+    color:var(--litewhite);
+    padding:.25em 1em;
+    
+}
+
